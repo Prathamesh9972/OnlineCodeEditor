@@ -1,0 +1,15 @@
+import { useState } from 'react'
+import './App.css'
+import CodeEditor from './pages/CodeEditor'
+
+function App() {
+  
+
+  return (
+    <>
+      <CodeEditor/>
+    </>
+  )
+}
+
+export default App
