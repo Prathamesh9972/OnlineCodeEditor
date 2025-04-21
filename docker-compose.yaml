@@ -8,6 +8,8 @@ services:
     volumes:
       - ./backend/code:/app
     command: ["python", "/app/main.py"]
+    stdin_open: true
+    tty: true
 
   js_executor:
     build:
@@ -16,6 +18,8 @@ services:
     volumes:
       - ./backend/code:/app
     command: ["node", "/app/main.js"]
+    stdin_open: true
+    tty: true
 
   java_executor:
     build:
@@ -24,6 +28,8 @@ services:
     volumes:
       - ./backend/code:/app
     command: ["sh", "-c", "javac /app/Main.java && java -cp /app Main"]
+    stdin_open: true
+    tty: true
 
   cpp_executor:
     build:
@@ -32,3 +38,5 @@ services:
     volumes:
       - ./backend/code:/app
     command: ["sh", "-c", "g++ /app/main.cpp -o /app/main.out && /app/main.out"]
+    stdin_open: true
+    tty: true
