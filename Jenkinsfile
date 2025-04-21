@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        REPO_URL = 'https://github.com/your-username/online-code-editor.git'
+        REPO_URL = 'https://github.com/Prathamesh9972/OnlineCodeEditor.git'
         DOCKER_COMPOSE_FILE = 'docker-compose.yml'
     }
     
