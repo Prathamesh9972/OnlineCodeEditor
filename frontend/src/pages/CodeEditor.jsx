@@ -461,7 +461,6 @@ const CodeEditor = ({ darkMode, setDarkMode }) => {
   const deleteFile = fileId => {
     if (!currentProject) return
 
-    // Don't allow deleting the last file
     if (currentProject.files.length <= 1) {
       toast.error("Cannot delete the last file in a project")
       return
@@ -573,7 +572,7 @@ const CodeEditor = ({ darkMode, setDarkMode }) => {
             <h2 className="text-lg font-semibold dark:text-white">Projects</h2>
             <button
               onClick={() => setShowProjectModal(true)}
-              className="p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
+              className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
               title="New Project"
             >
               <Plus size={18} className="dark:text-white" />
