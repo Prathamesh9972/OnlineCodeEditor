@@ -678,7 +678,7 @@ const CodeEditor = ({ darkMode, setDarkMode }) => {
               <div className="flex items-center space-x-2">
                 <span className="font-mono text-sm dark:text-white">
                   {currentFile?.name || "Untitled"}
-                  <span className="ml-2 text-xs text-gray-500 dark:text-gray-400">
+                  <span className="ml-2 text-xs text-gray-600 dark:text-gray-400">
                     (
                     {languageOptions.find(
                       l => l.value === currentFile?.language
